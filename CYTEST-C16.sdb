@@ -1,0 +1,556 @@
+[p PRO_MODE GLOBOPT AUTOSTATIC PIC14 PICREGULAR PICMID SPACEOPT ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F72 ]
+"48 D:\MyWorks\TEST\CYTEST_C16_16F72\CYTEST-C16.c
+[s S196 . 2 `uc 1 B0 1 0 :1:0 
+`uc 1 B1 1 0 :1:1 
+`uc 1 B2 1 0 :1:2 
+`uc 1 B3 1 0 :1:3 
+`uc 1 B4 1 0 :1:4 
+`uc 1 B5 1 0 :1:5 
+`uc 1 B6 1 0 :1:6 
+`uc 1 B7 1 0 :1:7 
+`uc 1 B8 1 1 :1:0 
+`uc 1 B9 1 1 :1:1 
+`uc 1 B10 1 1 :1:2 
+`uc 1 B11 1 1 :1:3 
+`uc 1 B12 1 1 :1:4 
+`uc 1 B13 1 1 :1:5 
+`uc 1 B14 1 1 :1:6 
+`uc 1 B15 1 1 :1:7 
+]
+[u S213 uword 2 `ui 1 word 2 0 `[2]uc 1 byte 2 0 `S196 1 bits 2 0 ]
+"52
+[u S239 ulword 4 `ul 1 lword 4 0 `[4]uc 1 byte 4 0 ]
+"61
+[s S253 scan 6 `[3]*DCuc 1 f 6 0 ]
+"79
+[v F371 `(v  1 t 0 ]
+"3 bmul.c
+[v ___bmul `(uc  1 e 1 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.80\sources\abdiv.c
+[v ___abdiv `(c  1 e 1 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.80\sources\abmod.c
+[v ___abmod `(c  1 e 1 0 ]
+"34 C:\Program Files\HI-TECH Software\PICC\9.80\sources\abtoft.c
+[v ___abtoft `(f  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.80\sources\aldiv.c
+[v ___aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.80\sources\almod.c
+[v ___almod `(l  1 e 4 0 ]
+"43 C:\Program Files\HI-TECH Software\PICC\9.80\sources\altoft.c
+[v ___altoft `(f  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.80\sources\atdiv.c
+[v ___atdiv `(m  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.80\sources\atmod.c
+[v ___atmod `(m  1 e 3 0 ]
+"38 C:\Program Files\HI-TECH Software\PICC\9.80\sources\attoft.c
+[v ___attoft `(f  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.80\sources\awdiv.c
+[v ___awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.80\sources\awmod.c
+[v ___awmod `(i  1 e 2 0 ]
+"33 C:\Program Files\HI-TECH Software\PICC\9.80\sources\awtoft.c
+[v ___awtoft `(f  1 e 3 0 ]
+"63 C:\Program Files\HI-TECH Software\PICC\9.80\sources\float.c
+[v ___ftpack `(f  1 e 3 0 ]
+"87 C:\Program Files\HI-TECH Software\PICC\9.80\sources\ftadd.c
+[v ___ftadd `(f  1 e 3 0 ]
+"50 C:\Program Files\HI-TECH Software\PICC\9.80\sources\ftdiv.c
+[v ___ftdiv `(f  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.80\sources\ftge.c
+[v ___ftge `(b  1 e 0 0 ]
+"52 C:\Program Files\HI-TECH Software\PICC\9.80\sources\ftmul.c
+[v ___ftmul `(f  1 e 3 0 ]
+"16 C:\Program Files\HI-TECH Software\PICC\9.80\sources\ftneg.c
+[v ___ftneg `(f  1 e 3 0 ]
+"17 C:\Program Files\HI-TECH Software\PICC\9.80\sources\ftsub.c
+[v ___ftsub `(f  1 e 3 0 ]
+"45 C:\Program Files\HI-TECH Software\PICC\9.80\sources\fttol.c
+[v ___fttol `(l  1 e 4 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.80\sources\lbdiv.c
+[v ___lbdiv `(uc  1 e 1 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.80\sources\lbmod.c
+[v ___lbmod `(uc  1 e 1 0 ]
+"28 C:\Program Files\HI-TECH Software\PICC\9.80\sources\lbtoft.c
+[v ___lbtoft `(f  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.80\sources\lldiv.c
+[v ___lldiv `(ul  1 e 4 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.80\sources\llmod.c
+[v ___llmod `(ul  1 e 4 0 ]
+"36 C:\Program Files\HI-TECH Software\PICC\9.80\sources\lltoft.c
+[v ___lltoft `(f  1 e 3 0 ]
+"3 C:\Program Files\HI-TECH Software\PICC\9.80\sources\lmul.c
+[v ___lmul `(ul  1 e 4 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.80\sources\ltdiv.c
+[v ___ltdiv `(um  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.80\sources\ltmod.c
+[v ___ltmod `(um  1 e 3 0 ]
+"31 C:\Program Files\HI-TECH Software\PICC\9.80\sources\lttoft.c
+[v ___lttoft `(f  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.80\sources\lwdiv.c
+[v ___lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC\9.80\sources\lwmod.c
+[v ___lwmod `(ui  1 e 2 0 ]
+"29 C:\Program Files\HI-TECH Software\PICC\9.80\sources\lwtoft.c
+[v ___lwtoft `(f  1 e 3 0 ]
+"3 C:\Program Files\HI-TECH Software\PICC\9.80\sources\tmul.c
+[v ___tmul `(um  1 e 3 0 ]
+"3 C:\Program Files\HI-TECH Software\PICC\9.80\sources\wmul.c
+[v ___wmul `(ui  1 e 2 0 ]
+"79 D:\MyWorks\TEST\CYTEST_C16_16F72\CYTEST-C16.c
+[v _isr `I(v  1 s 0 isr ]
+"89
+[v _main `(v  1 e 0 0 ]
+"247
+[v _filter `(ui  1 e 2 0 ]
+"19 D:\MyWorks\TEST\CYTEST_C16_16F72\init.c
+[v _Init_System `(v  1 e 0 0 ]
+"33
+[v _Init_IO `(v  1 e 0 0 ]
+"49
+[v _Init_Timer1 `(v  1 e 0 0 ]
+"62
+[v _Init_AD_Module `(v  1 e 0 0 ]
+"20 C:\Program Files\HI-TECH Software\PICC\9.80\include\pic16f7x.h
+[v _INDF `Vuc  1 e 1 @0 ]
+"21
+[v _TMR0 `Vuc  1 e 1 @1 ]
+"22
+[v _PCL `Vuc  1 e 1 @2 ]
+"23
+[v _STATUS `Vuc  1 e 1 @3 ]
+"24
+[v _FSR `Vuc  1 e 1 @4 ]
+"25
+[v _PORTA `Vuc  1 e 1 @5 ]
+"26
+[v _PORTB `Vuc  1 e 1 @6 ]
+"27
+[v _PORTC `Vuc  1 e 1 @7 ]
+"32
+[v _PCLATH `Vuc  1 e 1 @10 ]
+"33
+[v _INTCON `Vuc  1 e 1 @11 ]
+"34
+[v _PIR1 `Vuc  1 e 1 @12 ]
+"38
+[v _TMR1L `Vuc  1 e 1 @14 ]
+"39
+[v _TMR1H `Vuc  1 e 1 @15 ]
+"40
+[v _T1CON `Vuc  1 e 1 @16 ]
+"41
+[v _TMR2 `Vuc  1 e 1 @17 ]
+"42
+[v _T2CON `Vuc  1 e 1 @18 ]
+"43
+[v _SSPBUF `Vuc  1 e 1 @19 ]
+"44
+[v _SSPCON `Vuc  1 e 1 @20 ]
+"45
+[v _CCPR1L `Vuc  1 e 1 @21 ]
+"46
+[v _CCPR1H `Vuc  1 e 1 @22 ]
+"47
+[v _CCP1CON `Vuc  1 e 1 @23 ]
+"56
+[v _ADRES `Vuc  1 e 1 @30 ]
+"57
+[v _ADCON0 `Vuc  1 e 1 @31 ]
+"60
+[v _OPTION `Vuc  1 e 1 @129 ]
+"61
+[v _TRISA `Vuc  1 e 1 @133 ]
+"62
+[v _TRISB `Vuc  1 e 1 @134 ]
+"63
+[v _TRISC `Vuc  1 e 1 @135 ]
+"68
+[v _PIE1 `Vuc  1 e 1 @140 ]
+"72
+[v _PCON `Vuc  1 e 1 @142 ]
+"73
+[v _PR2 `Vuc  1 e 1 @146 ]
+"74
+[v _SSPADD `Vuc  1 e 1 @147 ]
+"75
+[v _SSPSTAT `Vuc  1 e 1 @148 ]
+"80
+[v _ADCON1 `Vuc  1 e 1 @159 ]
+"84
+[v _PMDATL `Vuc  1 e 1 @268 ]
+"85
+[v _PMADRL `Vuc  1 e 1 @269 ]
+"90
+[v _PMDATH `Vuc  1 e 1 @270 ]
+"91
+[v _PMADRH `Vuc  1 e 1 @271 ]
+"94
+[v _PMCON1 `Vuc  1 e 1 @396 ]
+"97
+[v _IRP `Vb  1 e 0 @31 ]
+"98
+[v _RP1 `Vb  1 e 0 @30 ]
+"99
+[v _RP0 `Vb  1 e 0 @29 ]
+"100
+[v _TO `Vb  1 e 0 @28 ]
+"101
+[v _PD `Vb  1 e 0 @27 ]
+"102
+[v _ZERO `Vb  1 e 0 @26 ]
+"103
+[v _DC `Vb  1 e 0 @25 ]
+"104
+[v _CARRY `Vb  1 e 0 @24 ]
+"107
+[v _RA5 `Vb  1 e 0 @45 ]
+"108
+[v _RA4 `Vb  1 e 0 @44 ]
+"109
+[v _RA3 `Vb  1 e 0 @43 ]
+"110
+[v _RA2 `Vb  1 e 0 @42 ]
+"111
+[v _RA1 `Vb  1 e 0 @41 ]
+"112
+[v _RA0 `Vb  1 e 0 @40 ]
+"115
+[v _RB7 `Vb  1 e 0 @55 ]
+"116
+[v _RB6 `Vb  1 e 0 @54 ]
+"117
+[v _RB5 `Vb  1 e 0 @53 ]
+"118
+[v _RB4 `Vb  1 e 0 @52 ]
+"119
+[v _RB3 `Vb  1 e 0 @51 ]
+"120
+[v _RB2 `Vb  1 e 0 @50 ]
+"121
+[v _RB1 `Vb  1 e 0 @49 ]
+"122
+[v _RB0 `Vb  1 e 0 @48 ]
+"125
+[v _RC7 `Vb  1 e 0 @63 ]
+"126
+[v _RC6 `Vb  1 e 0 @62 ]
+"127
+[v _RC5 `Vb  1 e 0 @61 ]
+"128
+[v _RC4 `Vb  1 e 0 @60 ]
+"129
+[v _RC3 `Vb  1 e 0 @59 ]
+"130
+[v _RC2 `Vb  1 e 0 @58 ]
+"131
+[v _RC1 `Vb  1 e 0 @57 ]
+"132
+[v _RC0 `Vb  1 e 0 @56 ]
+"152
+[v _GIE `Vb  1 e 0 @95 ]
+"153
+[v _PEIE `Vb  1 e 0 @94 ]
+"154
+[v _T0IE `Vb  1 e 0 @93 ]
+"155
+[v _INTE `Vb  1 e 0 @92 ]
+"156
+[v _RBIE `Vb  1 e 0 @91 ]
+"157
+[v _T0IF `Vb  1 e 0 @90 ]
+"158
+[v _INTF `Vb  1 e 0 @89 ]
+"159
+[v _RBIF `Vb  1 e 0 @88 ]
+"161
+[v _TMR0IE `Vb  1 e 0 @93 ]
+"162
+[v _TMR0IF `Vb  1 e 0 @90 ]
+"168
+[v _ADIF `Vb  1 e 0 @102 ]
+"173
+[v _SSPIF `Vb  1 e 0 @99 ]
+"174
+[v _CCP1IF `Vb  1 e 0 @98 ]
+"175
+[v _TMR2IF `Vb  1 e 0 @97 ]
+"176
+[v _TMR1IF `Vb  1 e 0 @96 ]
+"184
+[v _T1CKPS1 `Vb  1 e 0 @133 ]
+"185
+[v _T1CKPS0 `Vb  1 e 0 @132 ]
+"186
+[v _T1OSCEN `Vb  1 e 0 @131 ]
+"187
+[v _T1SYNC `Vb  1 e 0 @130 ]
+"188
+[v _TMR1CS `Vb  1 e 0 @129 ]
+"189
+[v _TMR1ON `Vb  1 e 0 @128 ]
+"192
+[v _TOUTPS3 `Vb  1 e 0 @150 ]
+"193
+[v _TOUTPS2 `Vb  1 e 0 @149 ]
+"194
+[v _TOUTPS1 `Vb  1 e 0 @148 ]
+"195
+[v _TOUTPS0 `Vb  1 e 0 @147 ]
+"196
+[v _TMR2ON `Vb  1 e 0 @146 ]
+"197
+[v _T2CKPS1 `Vb  1 e 0 @145 ]
+"198
+[v _T2CKPS0 `Vb  1 e 0 @144 ]
+"201
+[v _WCOL `Vb  1 e 0 @167 ]
+"202
+[v _SSPOV `Vb  1 e 0 @166 ]
+"203
+[v _SSPEN `Vb  1 e 0 @165 ]
+"204
+[v _CKP `Vb  1 e 0 @164 ]
+"205
+[v _SSPM3 `Vb  1 e 0 @163 ]
+"206
+[v _SSPM2 `Vb  1 e 0 @162 ]
+"207
+[v _SSPM1 `Vb  1 e 0 @161 ]
+"208
+[v _SSPM0 `Vb  1 e 0 @160 ]
+"211
+[v _CCP1X `Vb  1 e 0 @189 ]
+"212
+[v _CCP1Y `Vb  1 e 0 @188 ]
+"213
+[v _CCP1M3 `Vb  1 e 0 @187 ]
+"214
+[v _CCP1M2 `Vb  1 e 0 @186 ]
+"215
+[v _CCP1M1 `Vb  1 e 0 @185 ]
+"216
+[v _CCP1M0 `Vb  1 e 0 @184 ]
+"238
+[v _ADCS1 `Vb  1 e 0 @255 ]
+"239
+[v _ADCS0 `Vb  1 e 0 @254 ]
+"240
+[v _CHS2 `Vb  1 e 0 @253 ]
+"241
+[v _CHS1 `Vb  1 e 0 @252 ]
+"242
+[v _CHS0 `Vb  1 e 0 @251 ]
+"243
+[v _ADGO `Vb  1 e 0 @250 ]
+"245
+[v _GODONE `Vb  1 e 0 @250 ]
+"246
+[v _ADON `Vb  1 e 0 @248 ]
+"249
+[v _RBPU `Vb  1 e 0 @1039 ]
+"250
+[v _INTEDG `Vb  1 e 0 @1038 ]
+"251
+[v _T0CS `Vb  1 e 0 @1037 ]
+"252
+[v _T0SE `Vb  1 e 0 @1036 ]
+"253
+[v _PSA `Vb  1 e 0 @1035 ]
+"254
+[v _PS2 `Vb  1 e 0 @1034 ]
+"255
+[v _PS1 `Vb  1 e 0 @1033 ]
+"256
+[v _PS0 `Vb  1 e 0 @1032 ]
+"259
+[v _TRISA5 `Vb  1 e 0 @1069 ]
+"260
+[v _TRISA4 `Vb  1 e 0 @1068 ]
+"261
+[v _TRISA3 `Vb  1 e 0 @1067 ]
+"262
+[v _TRISA2 `Vb  1 e 0 @1066 ]
+"263
+[v _TRISA1 `Vb  1 e 0 @1065 ]
+"264
+[v _TRISA0 `Vb  1 e 0 @1064 ]
+"267
+[v _TRISB7 `Vb  1 e 0 @1079 ]
+"268
+[v _TRISB6 `Vb  1 e 0 @1078 ]
+"269
+[v _TRISB5 `Vb  1 e 0 @1077 ]
+"270
+[v _TRISB4 `Vb  1 e 0 @1076 ]
+"271
+[v _TRISB3 `Vb  1 e 0 @1075 ]
+"272
+[v _TRISB2 `Vb  1 e 0 @1074 ]
+"273
+[v _TRISB1 `Vb  1 e 0 @1073 ]
+"274
+[v _TRISB0 `Vb  1 e 0 @1072 ]
+"277
+[v _TRISC7 `Vb  1 e 0 @1087 ]
+"278
+[v _TRISC6 `Vb  1 e 0 @1086 ]
+"279
+[v _TRISC5 `Vb  1 e 0 @1085 ]
+"280
+[v _TRISC4 `Vb  1 e 0 @1084 ]
+"281
+[v _TRISC3 `Vb  1 e 0 @1083 ]
+"282
+[v _TRISC2 `Vb  1 e 0 @1082 ]
+"283
+[v _TRISC1 `Vb  1 e 0 @1081 ]
+"284
+[v _TRISC0 `Vb  1 e 0 @1080 ]
+"312
+[v _ADIE `Vb  1 e 0 @1126 ]
+"317
+[v _SSPIE `Vb  1 e 0 @1123 ]
+"318
+[v _CCP1IE `Vb  1 e 0 @1122 ]
+"319
+[v _TMR2IE `Vb  1 e 0 @1121 ]
+"320
+[v _TMR1IE `Vb  1 e 0 @1120 ]
+"328
+[v _POR `Vb  1 e 0 @1137 ]
+"329
+[v _BOR `Vb  1 e 0 @1136 ]
+"332
+[v _SMP `Vb  1 e 0 @1191 ]
+"333
+[v _CKE `Vb  1 e 0 @1190 ]
+"334
+[v _DA `Vb  1 e 0 @1189 ]
+"335
+[v _STOP `Vb  1 e 0 @1188 ]
+"336
+[v _START `Vb  1 e 0 @1187 ]
+"337
+[v _RW `Vb  1 e 0 @1186 ]
+"338
+[v _UA `Vb  1 e 0 @1185 ]
+"339
+[v _BF `Vb  1 e 0 @1184 ]
+"363
+[v _PCFG2 `Vb  1 e 0 @1274 ]
+"364
+[v _PCFG1 `Vb  1 e 0 @1273 ]
+"365
+[v _PCFG0 `Vb  1 e 0 @1272 ]
+"368
+[v _RD `Vb  1 e 0 @3168 ]
+"46 D:\MyWorks\TEST\CYTEST_C16_16F72\CYTEST-C16.c
+[v _r0 `uc  1 s 1 r0 ]
+[v _r1 `uc  1 s 1 r1 ]
+[v _r2 `uc  1 s 1 r2 ]
+[v _r3 `uc  1 s 1 r3 ]
+[v _r4 `uc  1 s 1 r4 ]
+[v _r5 `uc  1 s 1 r5 ]
+[v _r6 `uc  1 s 1 r6 ]
+"47
+[v _cnt0 `ui  1 s 2 cnt0 ]
+[v _cnt1 `ui  1 s 2 cnt1 ]
+"48
+[v _TEMP `ui  1 s 2 TEMP ]
+"49
+[v _temp `S213  1 s 2 temp ]
+"51
+[v _DRESULT `ui  1 s 2 DRESULT ]
+"52
+[v _DREMAIN `uc  1 s 1 DREMAIN ]
+"54
+[v _dresult `S239  1 s 4 dresult ]
+[v _dcnt0 `S239  1 s 4 dcnt0 ]
+"55
+[v _dcnt1 `ui  1 s 2 dcnt1 ]
+"56
+[v _dremain `uc  1 s 1 dremain ]
+"59
+[v _aa `DC[2]uc  1 e 2 0 ]
+"60
+[v _bb `DC[4]uc  1 e 4 0 ]
+"61
+[v _cc `DC[3]uc  1 e 3 0 ]
+"71
+[v _arrAD `[8]ui  1 e 16 0 ]
+"89
+[v _main `(v  1 e 0 0 ]
+{
+"241
+} 0
+"19 D:\MyWorks\TEST\CYTEST_C16_16F72\init.c
+[v _Init_System `(v  1 e 0 0 ]
+{
+"27
+} 0
+"5 C:\Program Files\HI-TECH Software\PICC\9.80\sources\lldiv.c
+[v ___lldiv `(ul  1 e 4 0 ]
+{
+"6
+[v ___lldiv@quotient `ul  1 a 4 10 ]
+"7
+[v ___lldiv@counter `uc  1 a 1 14 ]
+"5
+[v ___lldiv@divisor `ul  1 p 4 2 ]
+[v ___lldiv@dividend `ul  1 p 4 6 ]
+"26
+} 0
+"5 C:\Program Files\HI-TECH Software\PICC\9.80\sources\llmod.c
+[v ___llmod `(ul  1 e 4 0 ]
+{
+"6
+[v ___llmod@counter `uc  1 a 1 10 ]
+"5
+[v ___llmod@divisor `ul  1 p 4 2 ]
+[v ___llmod@dividend `ul  1 p 4 6 ]
+"21
+} 0
+"3 C:\Program Files\HI-TECH Software\PICC\9.80\sources\wmul.c
+[v ___wmul `(ui  1 e 2 0 ]
+{
+"4
+[v ___wmul@product `ui  1 a 2 6 ]
+"3
+[v ___wmul@multiplier `ui  1 p 2 2 ]
+[v ___wmul@multiplicand `ui  1 p 2 4 ]
+"13
+} 0
+"33 D:\MyWorks\TEST\CYTEST_C16_16F72\init.c
+[v _Init_IO `(v  1 e 0 0 ]
+{
+"42
+} 0
+"62
+[v _Init_AD_Module `(v  1 e 0 0 ]
+{
+"64
+} 0
+"247 D:\MyWorks\TEST\CYTEST_C16_16F72\CYTEST-C16.c
+[v _filter `(ui  1 e 2 0 ]
+{
+[v filter@ptArr `*.0ui  1 a 1 wreg ]
+"249
+[v filter@value_buf `[8]ui  1 a 16 10 ]
+"250
+[v filter@sum `ui  1 a 2 27 ]
+[v filter@tmp `ui  1 a 2 8 ]
+"248
+[v filter@i `uc  1 a 1 30 ]
+[v filter@j `uc  1 a 1 29 ]
+"247
+[v filter@ptArr `*.0ui  1 a 1 wreg ]
+"278
+} 0
+"79
+[v _isr `I(v  1 s 0 isr ]
+{
+"82
+} 0
